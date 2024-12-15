@@ -1,0 +1,55 @@
+.calendar-section {
+    margin: 20px;
+  }
+  
+  .event-input {
+    margin-top: 20px;
+  }
+  
+  .event-input textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .event-input button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .event-input button:hover {
+    background-color: #45a049;
+  }
+  
+  .event-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-list li {
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .event-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red; /* 점의 색을 빨간색으로 설정 */
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
