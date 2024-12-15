@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
+import './calendar.css';
 
 const CalendarSection = () => {
   const [date, setDate] = useState(new Date());
@@ -46,12 +46,14 @@ const CalendarSection = () => {
         tileContent={tileContent} // tileContent를 추가하여 점 표시
       />
       
+      <div className="event-container">
+
       <div className="event-input">
         <textarea
           value={newEvent}
           onChange={handleEventChange}
           rows="3"
-          placeholder="일정을 입력하세요..."
+          placeholder="일정을 입력하세요."
         />
         <button onClick={handleAddEvent}>일정 추가</button>
       </div>
@@ -64,6 +66,7 @@ const CalendarSection = () => {
           ))}
         </ul>
       </div>
+    </div>
     </div>
   );
 };

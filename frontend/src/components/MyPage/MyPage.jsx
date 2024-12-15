@@ -6,7 +6,7 @@ import './myPage.css';
 const MyPage = () => {
   return (
     <div className="mypage">
-      <h1>마이페이지</h1>
+      <h1>예슬이 기록보관소</h1>
       <DiarySection />
       <CalendarSection />
     </div>
